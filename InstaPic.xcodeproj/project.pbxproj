@@ -1,0 +1,788 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62CAA748DDB4D24739AAC776 /* Pods_InstaPicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D8B88B45C687D6E7821C7C /* Pods_InstaPicTests.framework */; };
+		75311833767953A58C36542D /* Pods_InstaPic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B26501A8A8ED83ACDEB67C76 /* Pods_InstaPic.framework */; };
+		BDD113701219652848F665B6 /* Pods_InstaPic_InstaPicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C243D9C15D529458E3FCD65 /* Pods_InstaPic_InstaPicUITests.framework */; };
+		D700F66225F86FA40077A8D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D700F66125F86FA40077A8D2 /* AppDelegate.swift */; };
+		D700F66425F86FA40077A8D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D700F66325F86FA40077A8D2 /* SceneDelegate.swift */; };
+		D700F66925F86FA40077A8D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D700F66725F86FA40077A8D2 /* Main.storyboard */; };
+		D700F66B25F86FA70077A8D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D700F66A25F86FA70077A8D2 /* Assets.xcassets */; };
+		D700F66E25F86FA70077A8D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D700F66C25F86FA70077A8D2 /* LaunchScreen.storyboard */; };
+		D700F67925F86FA70077A8D2 /* InstaPicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D700F67825F86FA70077A8D2 /* InstaPicTests.swift */; };
+		D700F68425F86FA70077A8D2 /* InstaPicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D700F68325F86FA70077A8D2 /* InstaPicUITests.swift */; };
+		D733B35025F953FD006D2FDA /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D733B34F25F953FD006D2FDA /* PostCell.swift */; };
+		D789DCEE25F9309F00666DA7 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D789DCED25F9309F00666DA7 /* CameraViewController.swift */; };
+		D7CAB5F225F87438002404AD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CAB5F125F87438002404AD /* LoginViewController.swift */; };
+		D7CAB5F725F874BA002404AD /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CAB5F625F874BA002404AD /* FeedViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D700F67525F86FA70077A8D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D700F65625F86FA40077A8D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D700F65D25F86FA40077A8D2;
+			remoteInfo = InstaPic;
+		};
+		D700F68025F86FA70077A8D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D700F65625F86FA40077A8D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D700F65D25F86FA40077A8D2;
+			remoteInfo = InstaPic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15DE34D6617AE0DE9FB740C6 /* Pods-InstaPic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaPic.debug.xcconfig"; path = "Target Support Files/Pods-InstaPic/Pods-InstaPic.debug.xcconfig"; sourceTree = "<group>"; };
+		21DA2152D1CFE37E97581E0F /* Pods-InstaPic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaPic.release.xcconfig"; path = "Target Support Files/Pods-InstaPic/Pods-InstaPic.release.xcconfig"; sourceTree = "<group>"; };
+		6ED9A1E06DE88222D5D1090D /* Pods-InstaPic-InstaPicUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaPic-InstaPicUITests.debug.xcconfig"; path = "Target Support Files/Pods-InstaPic-InstaPicUITests/Pods-InstaPic-InstaPicUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F7B8B9473374E78984FD1F6 /* Pods-InstaPicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaPicTests.debug.xcconfig"; path = "Target Support Files/Pods-InstaPicTests/Pods-InstaPicTests.debug.xcconfig"; sourceTree = "<group>"; };
+		71937CD7DAE0EDEC394496E9 /* Pods-InstaPicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaPicTests.release.xcconfig"; path = "Target Support Files/Pods-InstaPicTests/Pods-InstaPicTests.release.xcconfig"; sourceTree = "<group>"; };
+		8C243D9C15D529458E3FCD65 /* Pods_InstaPic_InstaPicUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaPic_InstaPicUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4DC507C02B95B7EEE38B54E /* Pods-InstaPic-InstaPicUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaPic-InstaPicUITests.release.xcconfig"; path = "Target Support Files/Pods-InstaPic-InstaPicUITests/Pods-InstaPic-InstaPicUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B0D8B88B45C687D6E7821C7C /* Pods_InstaPicTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaPicTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B26501A8A8ED83ACDEB67C76 /* Pods_InstaPic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaPic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D700F65E25F86FA40077A8D2 /* InstaPic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaPic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D700F66125F86FA40077A8D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D700F66325F86FA40077A8D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D700F66825F86FA40077A8D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D700F66A25F86FA70077A8D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D700F66D25F86FA70077A8D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D700F66F25F86FA70077A8D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D700F67425F86FA70077A8D2 /* InstaPicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaPicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D700F67825F86FA70077A8D2 /* InstaPicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaPicTests.swift; sourceTree = "<group>"; };
+		D700F67A25F86FA70077A8D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D700F67F25F86FA70077A8D2 /* InstaPicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaPicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D700F68325F86FA70077A8D2 /* InstaPicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaPicUITests.swift; sourceTree = "<group>"; };
+		D700F68525F86FA70077A8D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D733B34F25F953FD006D2FDA /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		D789DCED25F9309F00666DA7 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		D7CAB5F125F87438002404AD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D7CAB5F625F874BA002404AD /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D700F65B25F86FA40077A8D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75311833767953A58C36542D /* Pods_InstaPic.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D700F67125F86FA70077A8D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62CAA748DDB4D24739AAC776 /* Pods_InstaPicTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D700F67C25F86FA70077A8D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDD113701219652848F665B6 /* Pods_InstaPic_InstaPicUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF6E1BFE080B00FA8999CAF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15DE34D6617AE0DE9FB740C6 /* Pods-InstaPic.debug.xcconfig */,
+				21DA2152D1CFE37E97581E0F /* Pods-InstaPic.release.xcconfig */,
+				6ED9A1E06DE88222D5D1090D /* Pods-InstaPic-InstaPicUITests.debug.xcconfig */,
+				A4DC507C02B95B7EEE38B54E /* Pods-InstaPic-InstaPicUITests.release.xcconfig */,
+				6F7B8B9473374E78984FD1F6 /* Pods-InstaPicTests.debug.xcconfig */,
+				71937CD7DAE0EDEC394496E9 /* Pods-InstaPicTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D700F65525F86FA40077A8D2 = {
+			isa = PBXGroup;
+			children = (
+				D700F66025F86FA40077A8D2 /* InstaPic */,
+				D700F67725F86FA70077A8D2 /* InstaPicTests */,
+				D700F68225F86FA70077A8D2 /* InstaPicUITests */,
+				D700F65F25F86FA40077A8D2 /* Products */,
+				CF6E1BFE080B00FA8999CAF2 /* Pods */,
+				FF6ED7815B64F4BC164CC732 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D700F65F25F86FA40077A8D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D700F65E25F86FA40077A8D2 /* InstaPic.app */,
+				D700F67425F86FA70077A8D2 /* InstaPicTests.xctest */,
+				D700F67F25F86FA70077A8D2 /* InstaPicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D700F66025F86FA40077A8D2 /* InstaPic */ = {
+			isa = PBXGroup;
+			children = (
+				D733B34E25F953E0006D2FDA /* Cell */,
+				D7CAB5ED25F8728F002404AD /* Storyboards */,
+				D7CAB5E325F87278002404AD /* Controller */,
+				D700F66125F86FA40077A8D2 /* AppDelegate.swift */,
+				D700F66325F86FA40077A8D2 /* SceneDelegate.swift */,
+				D700F66A25F86FA70077A8D2 /* Assets.xcassets */,
+				D700F66F25F86FA70077A8D2 /* Info.plist */,
+			);
+			path = InstaPic;
+			sourceTree = "<group>";
+		};
+		D700F67725F86FA70077A8D2 /* InstaPicTests */ = {
+			isa = PBXGroup;
+			children = (
+				D700F67825F86FA70077A8D2 /* InstaPicTests.swift */,
+				D700F67A25F86FA70077A8D2 /* Info.plist */,
+			);
+			path = InstaPicTests;
+			sourceTree = "<group>";
+		};
+		D700F68225F86FA70077A8D2 /* InstaPicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D700F68325F86FA70077A8D2 /* InstaPicUITests.swift */,
+				D700F68525F86FA70077A8D2 /* Info.plist */,
+			);
+			path = InstaPicUITests;
+			sourceTree = "<group>";
+		};
+		D733B34E25F953E0006D2FDA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D733B34F25F953FD006D2FDA /* PostCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D7CAB5E325F87278002404AD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D7CAB5F125F87438002404AD /* LoginViewController.swift */,
+				D7CAB5F625F874BA002404AD /* FeedViewController.swift */,
+				D789DCED25F9309F00666DA7 /* CameraViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D7CAB5ED25F8728F002404AD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D700F66725F86FA40077A8D2 /* Main.storyboard */,
+				D700F66C25F86FA70077A8D2 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FF6ED7815B64F4BC164CC732 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B26501A8A8ED83ACDEB67C76 /* Pods_InstaPic.framework */,
+				8C243D9C15D529458E3FCD65 /* Pods_InstaPic_InstaPicUITests.framework */,
+				B0D8B88B45C687D6E7821C7C /* Pods_InstaPicTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D700F65D25F86FA40077A8D2 /* InstaPic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D700F68825F86FA70077A8D2 /* Build configuration list for PBXNativeTarget "InstaPic" */;
+			buildPhases = (
+				D116100498E31010711DFEDC /* [CP] Check Pods Manifest.lock */,
+				D700F65A25F86FA40077A8D2 /* Sources */,
+				D700F65B25F86FA40077A8D2 /* Frameworks */,
+				D700F65C25F86FA40077A8D2 /* Resources */,
+				793BD28E875142A147869B1D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstaPic;
+			productName = InstaPic;
+			productReference = D700F65E25F86FA40077A8D2 /* InstaPic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D700F67325F86FA70077A8D2 /* InstaPicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D700F68B25F86FA70077A8D2 /* Build configuration list for PBXNativeTarget "InstaPicTests" */;
+			buildPhases = (
+				B07B65854CE3AC4E663AF54C /* [CP] Check Pods Manifest.lock */,
+				D700F67025F86FA70077A8D2 /* Sources */,
+				D700F67125F86FA70077A8D2 /* Frameworks */,
+				D700F67225F86FA70077A8D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D700F67625F86FA70077A8D2 /* PBXTargetDependency */,
+			);
+			name = InstaPicTests;
+			productName = InstaPicTests;
+			productReference = D700F67425F86FA70077A8D2 /* InstaPicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D700F67E25F86FA70077A8D2 /* InstaPicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D700F68E25F86FA70077A8D2 /* Build configuration list for PBXNativeTarget "InstaPicUITests" */;
+			buildPhases = (
+				332ED473550252C7E2C470F7 /* [CP] Check Pods Manifest.lock */,
+				D700F67B25F86FA70077A8D2 /* Sources */,
+				D700F67C25F86FA70077A8D2 /* Frameworks */,
+				D700F67D25F86FA70077A8D2 /* Resources */,
+				BE144D71E71345B124DFA7C9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D700F68125F86FA70077A8D2 /* PBXTargetDependency */,
+			);
+			name = InstaPicUITests;
+			productName = InstaPicUITests;
+			productReference = D700F67F25F86FA70077A8D2 /* InstaPicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D700F65625F86FA40077A8D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					D700F65D25F86FA40077A8D2 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					D700F67325F86FA70077A8D2 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = D700F65D25F86FA40077A8D2;
+					};
+					D700F67E25F86FA70077A8D2 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = D700F65D25F86FA40077A8D2;
+					};
+				};
+			};
+			buildConfigurationList = D700F65925F86FA40077A8D2 /* Build configuration list for PBXProject "InstaPic" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D700F65525F86FA40077A8D2;
+			productRefGroup = D700F65F25F86FA40077A8D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D700F65D25F86FA40077A8D2 /* InstaPic */,
+				D700F67325F86FA70077A8D2 /* InstaPicTests */,
+				D700F67E25F86FA70077A8D2 /* InstaPicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D700F65C25F86FA40077A8D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D700F66E25F86FA70077A8D2 /* LaunchScreen.storyboard in Resources */,
+				D700F66B25F86FA70077A8D2 /* Assets.xcassets in Resources */,
+				D700F66925F86FA40077A8D2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D700F67225F86FA70077A8D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D700F67D25F86FA70077A8D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		332ED473550252C7E2C470F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstaPic-InstaPicUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		793BD28E875142A147869B1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaPic/Pods-InstaPic-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaPic/Pods-InstaPic-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstaPic/Pods-InstaPic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B07B65854CE3AC4E663AF54C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstaPicTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE144D71E71345B124DFA7C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaPic-InstaPicUITests/Pods-InstaPic-InstaPicUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaPic-InstaPicUITests/Pods-InstaPic-InstaPicUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstaPic-InstaPicUITests/Pods-InstaPic-InstaPicUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D116100498E31010711DFEDC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstaPic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D700F65A25F86FA40077A8D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7CAB5F225F87438002404AD /* LoginViewController.swift in Sources */,
+				D789DCEE25F9309F00666DA7 /* CameraViewController.swift in Sources */,
+				D700F66225F86FA40077A8D2 /* AppDelegate.swift in Sources */,
+				D7CAB5F725F874BA002404AD /* FeedViewController.swift in Sources */,
+				D700F66425F86FA40077A8D2 /* SceneDelegate.swift in Sources */,
+				D733B35025F953FD006D2FDA /* PostCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D700F67025F86FA70077A8D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D700F67925F86FA70077A8D2 /* InstaPicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D700F67B25F86FA70077A8D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D700F68425F86FA70077A8D2 /* InstaPicUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D700F67625F86FA70077A8D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D700F65D25F86FA40077A8D2 /* InstaPic */;
+			targetProxy = D700F67525F86FA70077A8D2 /* PBXContainerItemProxy */;
+		};
+		D700F68125F86FA70077A8D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D700F65D25F86FA40077A8D2 /* InstaPic */;
+			targetProxy = D700F68025F86FA70077A8D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D700F66725F86FA40077A8D2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D700F66825F86FA40077A8D2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D700F66C25F86FA70077A8D2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D700F66D25F86FA70077A8D2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D700F68625F86FA70077A8D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D700F68725F86FA70077A8D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D700F68925F86FA70077A8D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15DE34D6617AE0DE9FB740C6 /* Pods-InstaPic.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZQXP2M3WJM;
+				INFOPLIST_FILE = InstaPic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.william.rai.app.ios.InstaPic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D700F68A25F86FA70077A8D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21DA2152D1CFE37E97581E0F /* Pods-InstaPic.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZQXP2M3WJM;
+				INFOPLIST_FILE = InstaPic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.william.rai.app.ios.InstaPic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D700F68C25F86FA70077A8D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F7B8B9473374E78984FD1F6 /* Pods-InstaPicTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZQXP2M3WJM;
+				INFOPLIST_FILE = InstaPicTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.william.rai.app.ios.InstaPicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstaPic.app/InstaPic";
+			};
+			name = Debug;
+		};
+		D700F68D25F86FA70077A8D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71937CD7DAE0EDEC394496E9 /* Pods-InstaPicTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZQXP2M3WJM;
+				INFOPLIST_FILE = InstaPicTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.william.rai.app.ios.InstaPicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstaPic.app/InstaPic";
+			};
+			name = Release;
+		};
+		D700F68F25F86FA70077A8D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ED9A1E06DE88222D5D1090D /* Pods-InstaPic-InstaPicUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZQXP2M3WJM;
+				INFOPLIST_FILE = InstaPicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.william.rai.app.ios.InstaPicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InstaPic;
+			};
+			name = Debug;
+		};
+		D700F69025F86FA70077A8D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4DC507C02B95B7EEE38B54E /* Pods-InstaPic-InstaPicUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZQXP2M3WJM;
+				INFOPLIST_FILE = InstaPicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.william.rai.app.ios.InstaPicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InstaPic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D700F65925F86FA40077A8D2 /* Build configuration list for PBXProject "InstaPic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D700F68625F86FA70077A8D2 /* Debug */,
+				D700F68725F86FA70077A8D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D700F68825F86FA70077A8D2 /* Build configuration list for PBXNativeTarget "InstaPic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D700F68925F86FA70077A8D2 /* Debug */,
+				D700F68A25F86FA70077A8D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D700F68B25F86FA70077A8D2 /* Build configuration list for PBXNativeTarget "InstaPicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D700F68C25F86FA70077A8D2 /* Debug */,
+				D700F68D25F86FA70077A8D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D700F68E25F86FA70077A8D2 /* Build configuration list for PBXNativeTarget "InstaPicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D700F68F25F86FA70077A8D2 /* Debug */,
+				D700F69025F86FA70077A8D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D700F65625F86FA40077A8D2 /* Project object */;
+}
