@@ -17,6 +17,3 @@ Time spent: 7 hours spent in total
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
-
-<img src='https://s19.aconvert.com/convert/p3r68-cdx67/5b6yf-lifno.gifh' width='300' alt='Video Walkthrough' />
