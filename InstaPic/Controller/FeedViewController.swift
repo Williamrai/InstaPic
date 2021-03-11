@@ -30,10 +30,18 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.refreshControl = refreshControl
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("view will appear")
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        loadPosts()
+        self.loadPosts()
+        print("loading posts")
     }
+    
+    
     
     //load post from the server
     @objc func loadPosts(){
@@ -41,6 +49,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let query = PFQuery(className: "Posts")
         query.includeKey("author")
         query.limit = numberOfPosts
+        query.order(byDescending: "createdAt")
         
         query.findObjectsInBackground { (posts, error) in
             if posts != nil{
@@ -56,9 +65,10 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     func loadMorePosts(){
         let query = PFQuery(className: "Posts")
         query.includeKey("author")
-        numberOfPosts += 1
+        numberOfPosts += 5
         query.limit = numberOfPosts
-        
+        query.order(byDescending: "createdAt")
+
         query.findObjectsInBackground { (posts, error) in
             if posts != nil{
                 self.posts = posts!
@@ -106,7 +116,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     //for loading post when scrolled
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if indexPath.row + 1 == posts.count{
-            loadMorePosts()
+            //loadMorePosts()
         }
     }
     
