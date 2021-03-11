@@ -17,3 +17,4 @@ Time spent: 7 hours spent in total
 
 ## Video Walkthrough
 
+![Application Walkthrough](instapic.gif)
