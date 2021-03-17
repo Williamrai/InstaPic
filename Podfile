@@ -8,6 +8,7 @@ target 'InstaPic' do
   # Pods for InstaPic
   pod 'Parse'
   pod 'AlamofireImage'
+  pod 'MessageInputBar'
 	
 
   target 'InstaPicTests' do
