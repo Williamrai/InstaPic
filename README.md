@@ -13,6 +13,12 @@ Time spent: 5 hours spent in total
 - User can view comments on a post. (3pts)
 - User can add a new comment. (5pts)
 
+## Video Walkthrough
+
+![Coming Soon]()
+
+---
+
 # InstaPic - Part I
 
 This is an Instagram clone with a custom Parse backend that allows a user to post photos and view a global photos feed.
