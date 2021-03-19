@@ -8,10 +8,11 @@ Time spent: 5 hours spent in total
 
 ## Added Functions
 
-- User stays logged in across restarts. (1pt)
-- User can log out. (1pt)
-- User can view comments on a post. (3pts)
-- User can add a new comment. (5pts)
+- User stays logged in across restarts. 
+- User can log out. 
+- User can view comments on a post. 
+- User can add a new comment. 
+- User can add a profile picture.
 
 ## Video Walkthrough
 
