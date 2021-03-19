@@ -20,11 +20,6 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        if UserDefaults.standard.bool(forKey: "userLoggedIn") == true{
-            self.performSegue(withIdentifier: "loginToFeed", sender: nil)
-        }
-    }
 
     
     @IBAction func onSignIn(_ sender: Any) {
@@ -36,7 +31,6 @@ class LoginViewController: UIViewController {
                 self.userNameTF.text = ""
                 self.passwordField.text = ""
                 self.performSegue(withIdentifier: "loginToFeed", sender: nil)
-                UserDefaults.standard.setValue(true, forKey: "userLoggedIn")
             }else{
                 print("error \(error!.localizedDescription)")
             }
