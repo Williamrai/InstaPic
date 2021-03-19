@@ -32,9 +32,9 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
                 DispatchQueue.main.async {
                     //setting image
                     //image
-                    print("inside")
-                    if (profile?.count ?? 0 > 0){
-                        let imageFile = profile?[0]["image"] as! PFFileObject
+                    let count = profile?.count ?? 0
+                    if (count > 0){
+                        let imageFile = profile?[count-1]["image"] as! PFFileObject
                         let imageUrl = imageFile.url!
                         let url = URL(string: imageUrl)!
                         self.profileImage.af.setImage(withURL: url)
