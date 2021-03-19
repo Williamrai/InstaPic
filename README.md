@@ -15,7 +15,8 @@ Time spent: 5 hours spent in total
 
 ## Video Walkthrough
 
-![Coming Soon]()
+![insta1](insta1.gif)
+![insta2](insta2.gif)
 
 ---
 
