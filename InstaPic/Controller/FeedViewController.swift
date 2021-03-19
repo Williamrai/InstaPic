@@ -135,11 +135,17 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBAction func onBack(_ sender: Any) {
         PFUser.logOut()
         print("inside")
+        
+        
+        //let delegate = self.view.window?.windowScene?.delegate as! SceneDelegate
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+              let sceneDelegate = windowScene.delegate as? SceneDelegate
+        else{
+            return
+        }
         let main = UIStoryboard(name: "Main", bundle: nil)
         let loginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
-        
-        let delegate = self.view.window?.windowScene?.delegate as! SceneDelegate
-        delegate.window?.rootViewController = loginViewController
+        sceneDelegate.window?.rootViewController = loginViewController
         
     }
     

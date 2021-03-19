@@ -115,7 +115,7 @@
                     <connections>
                         <outlet property="passwordField" destination="FJG-Iz-dhH" id="Gug-eY-gY2"/>
                         <outlet property="userNameTF" destination="qgK-qA-M7C" id="5dm-vm-oyM"/>
-                        <segue destination="dOL-0N-xE3" kind="presentation" identifier="loginToFeed" modalPresentationStyle="fullScreen" id="2tW-1A-eF4"/>
+                        <segue destination="eby-s4-uA0" kind="presentation" identifier="loginToFeed" modalPresentationStyle="fullScreen" id="TKx-cX-n4M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -131,7 +131,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="s0f-3N-a0j">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="630"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="581"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="304.5" id="5yf-A1-jvK" customClass="PostCell" customModule="InstaPic" customModuleProvider="target">
@@ -215,14 +215,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddCommentCell" id="kod-1K-GSF" userLabel="Add a comment Cell">
-                                        <rect key="frame" x="0.0" y="366" width="375" height="37"/>
+                                        <rect key="frame" x="0.0" y="366" width="375" height="37.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kod-1K-GSF" id="29T-gG-9hZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="37"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="37.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a comment..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tlj-82-Sqg">
-                                                    <rect key="frame" x="16" y="8" width="351" height="21"/>
+                                                    <rect key="frame" x="16" y="8" width="351" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.70521776603929931" green="0.70521776603929931" blue="0.70521776603929931" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -267,7 +267,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kLT-Ax-bMC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1728.985507246377" y="124.55357142857142"/>
+            <point key="canvasLocation" x="2511" y="-80"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="MAx-wS-XAS">
@@ -318,12 +318,100 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2562.3188405797105" y="134.59821428571428"/>
+            <point key="canvasLocation" x="3343" y="-69"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Profile-->
+        <scene sceneID="Wg1-uP-dEP">
+            <objects>
+                <viewController id="hU9-fj-uhU" customClass="ProfileViewController" customModule="InstaPic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cfQ-XX-oS3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rockstar Wonder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38B-t8-hP6">
+                                <rect key="frame" x="16" y="16" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="5QR-EO-bEr">
+                                <rect key="frame" x="51" y="44.5" width="272" height="180"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5QR-EO-bEr" secondAttribute="height" multiplier="68:45" id="TmN-jE-LpD"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Sqe-84-CAl" appends="YES" id="Onh-D5-bzB"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0a1-XQ-glB">
+                                <rect key="frame" x="104" y="244.5" width="166" height="30"/>
+                                <color key="backgroundColor" systemColor="placeholderTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="v4B-0F-XsH"/>
+                                    <constraint firstAttribute="height" constant="30" id="wUV-WP-9pO"/>
+                                </constraints>
+                                <state key="normal" title="Upload Profile Picture">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="uploadProfilePic:" destination="hU9-fj-uhU" eventType="touchUpInside" id="30z-Ud-S9V"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EpP-i5-KKH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0a1-XQ-glB" firstAttribute="top" secondItem="5QR-EO-bEr" secondAttribute="bottom" constant="20" id="2Bk-c5-Yco"/>
+                            <constraint firstItem="EpP-i5-KKH" firstAttribute="trailing" secondItem="0a1-XQ-glB" secondAttribute="trailing" constant="105" id="8Oo-Q9-UDe"/>
+                            <constraint firstItem="38B-t8-hP6" firstAttribute="leading" secondItem="EpP-i5-KKH" secondAttribute="leading" constant="16" id="9GT-ue-SOF"/>
+                            <constraint firstItem="0a1-XQ-glB" firstAttribute="top" secondItem="5QR-EO-bEr" secondAttribute="bottom" constant="20" id="9uf-Dy-8Lz"/>
+                            <constraint firstItem="0a1-XQ-glB" firstAttribute="leading" secondItem="EpP-i5-KKH" secondAttribute="leading" constant="104" id="TpO-ze-Bns"/>
+                            <constraint firstItem="EpP-i5-KKH" firstAttribute="trailing" secondItem="5QR-EO-bEr" secondAttribute="trailing" constant="52" id="ZNb-EM-0qz"/>
+                            <constraint firstItem="5QR-EO-bEr" firstAttribute="leading" secondItem="EpP-i5-KKH" secondAttribute="leading" constant="51" id="eyq-bo-WsV"/>
+                            <constraint firstItem="38B-t8-hP6" firstAttribute="top" secondItem="EpP-i5-KKH" secondAttribute="top" constant="16" id="fmf-Gk-8J3"/>
+                            <constraint firstItem="EpP-i5-KKH" firstAttribute="trailing" secondItem="38B-t8-hP6" secondAttribute="trailing" constant="16" id="gwO-5w-Nv8"/>
+                            <constraint firstItem="5QR-EO-bEr" firstAttribute="top" secondItem="38B-t8-hP6" secondAttribute="bottom" constant="8" id="j7h-vE-pSt"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile_tab" id="EnO-4F-xGA"/>
+                    <connections>
+                        <outlet property="authorLabel" destination="38B-t8-hP6" id="x4h-3i-Eqi"/>
+                        <outlet property="profileImage" destination="5QR-EO-bEr" id="MQX-eV-KnM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aGM-3K-2va" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Sqe-84-CAl">
+                    <connections>
+                        <action selector="onProfImageTap:" destination="hU9-fj-uhU" id="pek-4I-jbY"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1600.8" y="671.51424287856082"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ykN-Fk-bWB">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarControllerId" id="eby-s4-uA0" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uLr-L9-NjT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dOL-0N-xE3" kind="relationship" relationship="viewControllers" id="EgA-TU-wDl"/>
+                        <segue destination="hU9-fj-uhU" kind="relationship" relationship="viewControllers" id="8Bt-vV-Bee"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Djt-mc-X7e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="610" y="126"/>
+        </scene>
+        <!--Home-->
         <scene sceneID="e8C-4n-Hev">
             <objects>
                 <navigationController storyboardIdentifier="FeedNavController" automaticallyAdjustsScrollViewInsets="NO" id="dOL-0N-xE3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="7db-2g-j3S"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kUH-wY-2mi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -336,15 +424,20 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dzO-WP-dNT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="818.84057971014499" y="124.55357142857142"/>
+            <point key="canvasLocation" x="1601" y="-80"/>
         </scene>
     </scenes>
     <resources>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="image_placeholder" width="375" height="375"/>
         <image name="insta_camera_btn" width="25" height="25"/>
         <image name="instagram_logo" width="255" height="108"/>
+        <image name="profile_tab" width="25" height="25"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="placeholderTextColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -20,8 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         if PFUser.current() != nil{
             let main = UIStoryboard(name: "Main", bundle: nil)
-            let feedNavController = main.instantiateViewController(withIdentifier: "FeedNavController")
-            window?.rootViewController = feedNavController
+            let tabBarController = main.instantiateViewController(withIdentifier: "TabBarControllerId")
+            window?.rootViewController = tabBarController
         }
         
         guard let _ = (scene as? UIWindowScene) else { return }
